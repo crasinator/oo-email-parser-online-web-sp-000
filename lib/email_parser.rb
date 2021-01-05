@@ -18,6 +18,6 @@ class EmailAddressParser
       arr = [ ]
       arr << email.split(", ")
       end 
-    return arr.flatten
+    return arr.flatten.uniq
   end 
 end 
