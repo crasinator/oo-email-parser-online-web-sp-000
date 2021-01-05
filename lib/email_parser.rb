@@ -5,19 +5,4 @@
 
 class EmailAddressParser 
   
-  @@all = [ ]
-  
-  def initialize(var)
-    @@all << var
-  end 
-    
-  def parse
-    arr = [ ]
-    
-    @@all.each do |email|
-      arr = [ ]
-      arr << email.split(", ")
-      end 
-    return arr.flatten.uniq
-  end 
 end 
