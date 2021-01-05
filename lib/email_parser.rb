@@ -17,8 +17,6 @@ class EmailAddressParser
     @@all.each do |email|
       arr = [ ]
       arr << email.split(", ")
-      arr.flatten
-      arr << email.split(" ")
       end 
     return arr.flatten
   end 
