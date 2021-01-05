@@ -11,6 +11,6 @@ class EmailAddressParser
   end 
   
   def parse
-    @parse.split(/,?\n/)
+    @parse.split(/,?\s/)
   end 
 end 
