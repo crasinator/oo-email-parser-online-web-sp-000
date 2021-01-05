@@ -12,9 +12,9 @@ class EmailAddressParser
   end 
     
   def parse
-    arr = [ ]
+
     
-    @@all.each do |email|
+    arr =  @@all.each do |email|
       arr.push(email.split(", "))
       end 
     return arr.flatten
