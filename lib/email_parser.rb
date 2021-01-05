@@ -7,8 +7,8 @@ class EmailAddressParser
   
   @@all = [ ]
   
-  def initialize
-    @@all << self
+  def initialize(var)
+    @@all << var
   end 
     
   def parse
@@ -17,6 +17,6 @@ class EmailAddressParser
     @@all.each do |email|
       arr.push(email.split(", "))
       end 
-    return arr.flatten
+    return arr.join(" ").split(" ")
   end 
 end 
