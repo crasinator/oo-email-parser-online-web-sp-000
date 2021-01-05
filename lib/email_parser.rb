@@ -18,6 +18,6 @@ class EmailAddressParser
       arr = [ ]
       arr.push(email.split(", "))
       end 
-    return arr.join(" ").split(", ")
+    return arr.join(", ").split(" ")
   end 
 end 
