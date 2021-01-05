@@ -12,8 +12,6 @@ class EmailAddressParser
   end 
     
   def parse
-    arr = [ ]
-    
     @@all.each do |email|
       arr = [ ]
       arr << email.split(", ")
